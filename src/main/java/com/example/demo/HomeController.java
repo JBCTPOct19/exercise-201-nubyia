@@ -12,7 +12,7 @@ public class HomeController {
         return "formtemplate";
     }
     @RequestMapping("/processform")
-    public String loadFromPage(@RequestParam("login") String login, Model model){
+    public String loadFromPage(@RequestParam("email") String login, Model model){
         model.addAttribute("loginval", login);
         return "confirm";
     }
